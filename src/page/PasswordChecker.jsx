@@ -56,7 +56,12 @@ export function PasswordChecker() {
         <ConditionTable />
         <Row className="m-4 w-50 mx-auto">
           <Col>
+<<<<<<< Updated upstream
+          <h2 className="text-primary">{password}</h2>
+            <h2 className="text-primary">How we Calcuate</h2>
+=======
             <h2 className="text-primary">How we Calculate</h2>
+>>>>>>> Stashed changes
             <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting

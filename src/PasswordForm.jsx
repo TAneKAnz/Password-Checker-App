@@ -1,23 +1,34 @@
-import { useState } from "react";
 import { Form, Button, Row } from "react-bootstrap";
 
 export function PasswordForm({ setPasswordFromChild }) {
 
   //const [selectedValue, setSelectedValue] = useState("");
   //setPassword ทุกครั้งๆที่คำข้างในเปลี่ยนละส่งกลับไปให้ Parent
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      setPasswordFromChild(event.target.value);
+      event.preventDefault()
+
+    }
+  };
   return (
     <Form>
       <Form.Group className="mb-3">
         <h2>
-          <p className="text-center"> How long Hacker cracked your password?</p>
+          <p className="text-center fw-bold"> How long Hacker cracked your password?</p>
         </h2>
         <Form.Control
           type="text"
           placeholder="Enter the password"
-          onChange={(e) => setPasswordFromChild(e.target.value)}
-          
+          onKeyDown={handleKeyDown}
+          className="shadow-sm p-3 mb-5 bg-white rounded"
         />
       </Form.Group>
+<<<<<<< Updated upstream
+    </Form>
+  );
+}
+=======
 
       
     </Form>
@@ -50,3 +61,4 @@ export function PasswordForm({ setPasswordFromChild }) {
         
       </Row>
 */
+>>>>>>> Stashed changes

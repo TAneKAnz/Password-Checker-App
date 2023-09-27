@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import { Home } from './page/Home'
 import { PasswordChecker } from './page/PasswordChecker'
 import { PasswordSuggestion } from './page/PasswordSuggestion'
+import { Members } from './page/Members'
 
 function App() {
 
@@ -15,9 +16,7 @@ function App() {
     <WebNavBar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/passwordchecker' element={<PasswordChecker/>}/>
-        <Route path='/passwordsuggestion' element={<PasswordSuggestion/>}/>
-
+        <Route path='/members' element={<Members/>}/>
       </Routes>
       </Container>
     </>
