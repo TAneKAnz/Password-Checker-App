@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainContainer{
+  height: 100vh;
+}
+.homeCon {
+  height: 90%;
+}
+div .memberBlock{
+  background-color: black;
+  height: 72px;
+  width: 444px;
+
+}
+div .memberpic{
+  max-height: 80%;
+}
+
+.timeResult h3{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.timeResult p{
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+/* Passwor */
+div .selForm{
+  font-size: small;
+  width: 216px;
+}
+div .calBtn{
+  width: 130px;
+}
