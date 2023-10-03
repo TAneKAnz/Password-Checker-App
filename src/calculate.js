@@ -2,7 +2,7 @@
 
 export function calculateTime(password) {
 
-    const speed = 1000000n;
+    const speed = 1000000000n;
     let result;
     let subfix = "";
 
@@ -21,60 +21,60 @@ export function calculateTime(password) {
 
     result = (Number(password) / Number(speed));
 
-    if (result > 60*60*24*365*1000000000000000000000) { 
-        result = Math.floor(result/(60*60*24*365*1000000000000000000000));
+    if (result > 60 * 60 * 24 * 365 * 1000000000000000000000) {
+        result = Math.floor(result / (60 * 60 * 24 * 365 * 1000000000000000000000));
         subfix += "sextillion years";
     }
-    else if (result > 60*60*24*365*1000000000000000000) {
-        result = Math.floor(result/(60*60*24*365*1000000000000000000));
+    else if (result > 60 * 60 * 24 * 365 * 1000000000000000000) {
+        result = Math.floor(result / (60 * 60 * 24 * 365 * 1000000000000000000));
         subfix += "quintillion years";
     }
-    else if (result > 60*60*24*365*1000000000000000) {
-        result = Math.floor(result/(60*60*24*365*1000000000000000));
+    else if (result > 60 * 60 * 24 * 365 * 1000000000000000) {
+        result = Math.floor(result / (60 * 60 * 24 * 365 * 1000000000000000));
         subfix += "quadrillion years";
     }
-    else if (result > 60*60*24*365*1000000000000) {
-        result = Math.floor(result/(60*60*24*365*1000000000000));
+    else if (result > 60 * 60 * 24 * 365 * 1000000000000) {
+        result = Math.floor(result / (60 * 60 * 24 * 365 * 1000000000000));
         subfix += "trillion years";
     }
-    else if (result > 60*60*24*365*1000000000) {
-        result = Math.floor(result/(60*60*24*365*1000000000));
+    else if (result > 60 * 60 * 24 * 365 * 1000000000) {
+        result = Math.floor(result / (60 * 60 * 24 * 365 * 1000000000));
         subfix += "billion years";
     }
-    else if (result > 60*60*24*365*1000000) {
-        result = Math.floor(result/(60*60*24*365*1000000));
+    else if (result > 60 * 60 * 24 * 365 * 1000000) {
+        result = Math.floor(result / (60 * 60 * 24 * 365 * 1000000));
         subfix += "million years";
     }
-    else if (result > 60*60*24*365*100000) {
-        result = Math.floor(result/(60*60*24*365*100000));
+    else if (result > 60 * 60 * 24 * 365 * 100000) {
+        result = Math.floor(result / (60 * 60 * 24 * 365 * 100000));
         subfix += "hundred thousand years";
     }
-    else if (result > 60*60*24*365*1000) {
-        result = Math.floor(result/(60*60*24*365*1000));
+    else if (result > 60 * 60 * 24 * 365 * 1000) {
+        result = Math.floor(result / (60 * 60 * 24 * 365 * 1000));
         subfix += "thousand years";
     }
-    else if (result > 60*60*24*365*100) {
-        result = Math.floor(result/(60*60*24*365*100));
-        subfix +=  "hundred years";
+    else if (result > 60 * 60 * 24 * 365 * 100) {
+        result = Math.floor(result / (60 * 60 * 24 * 365 * 100));
+        subfix += "hundred years";
     }
-    else if (result > 60*60*24*365) {
-        result = Math.floor(result/(60*60*24*365));
+    else if (result > 60 * 60 * 24 * 365) {
+        result = Math.floor(result / (60 * 60 * 24 * 365));
         subfix += "years";
     }
-    else if (result > 60*60*24*30) {
-        result = Math.floor(result/(60*60*24*30));
+    else if (result > 60 * 60 * 24 * 30) {
+        result = Math.floor(result / (60 * 60 * 24 * 30));
         subfix += "months";
     }
-    else if (result > 60*60*24) {
-        result = Math.floor(result/(60*60*24));
+    else if (result > 60 * 60 * 24) {
+        result = Math.floor(result / (60 * 60 * 24));
         subfix += "days";
     }
-    else if (result > 60*60) {
-        result = Math.floor(result/(60*60));
+    else if (result > 60 * 60) {
+        result = Math.floor(result / (60 * 60));
         subfix += "hours";
     }
     else if (result > 60) {
-        result = Math.floor(result/(60));
+        result = Math.floor(result / (60));
         subfix += "mins";
     }
     else if (result > 1) {

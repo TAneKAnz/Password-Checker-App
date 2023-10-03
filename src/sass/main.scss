@@ -1,12 +1,11 @@
 $primary : #1E1E1E;
 $secondary : #E56E00;
-$success: #00FF19;
-$danger:        #FD5656;
+$success: #1b7c26;
+$danger: #FD5656;
 
 $component-active-bg: #f29a04;
-$navbar-light-toggler-border-color:#FF7A00;
+$navbar-light-toggler-border-color: #FF7A00;
 $navbar-light-toggler-icon-bg: FF7A00;
-$table-bg-scale:              -0% !default;
+$table-bg-scale: -0% !default;
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
-

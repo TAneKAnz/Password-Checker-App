@@ -32,7 +32,7 @@ div .memberBlock{
 
 /* Members */
 .timeResult h3{
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  /*text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);*/
 font-family: Inter;
 font-size: 32px;
 font-style: normal;
@@ -55,6 +55,12 @@ div .calBtn{
   width: 130px;
 }
 /* Password */
+::-webkit-input-placeholder{
+  font-size: 2rem;
+}
+::-webkit-text-stroke-width{
+   .2em;
+        letter-spacing: 0.2em;
 /* NavBar */
 
 .navbar-brand-with-image img {

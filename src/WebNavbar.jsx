@@ -9,10 +9,10 @@ export function WebNavBar() {
       className="justify-content-between py-0 "
       bg="secondary"
     >
-      <Container className="mx-5 ">
+      <Container className="mx-5">
         <Navbar.Brand as={Link} to="/" className="text-primary py-0 navbar-brand-with-image">
           <img className="d-inline" src={webicon} />
-          <h1 className="d-inline">Computation</h1>
+          <h1 className=" d-inline text-center">Password Strength</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -46,6 +46,6 @@ function Linkto({ to, linkName }) {
       >
         {linkName}
       </Nav.Link>{" "}
-    </NavItem>  
+    </NavItem>
   );
 }
