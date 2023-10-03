@@ -9,9 +9,9 @@ export function WebNavBar() {
       className="justify-content-between py-0 "
       bg="secondary"
     >
-      <Container className="mx-5">
-        <Navbar.Brand as={Link} to="/" className="text-primary py-0 navbar-brand-with-image">
-          <img className="d-inline" src={webicon} />
+      <Container className="mx-5 d-flex align-items-center">
+        <Navbar.Brand as={Link} to="/" className="text-primary py-2 navbar-brand-with-image d-flex align-items-center">
+          <img className="d-inline text-center" src={webicon} style={{ width: '50px', height: '50px' }}/>
           <h1 className=" d-inline text-center">Password Strength</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
